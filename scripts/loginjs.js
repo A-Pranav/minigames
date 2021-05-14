@@ -20,7 +20,7 @@ function uscheck() {
                 localStorage.setItem("cusnaster", 0);
                 localStorage.setItem("cusnwam", 0);
                 localStorage.setItem("cusn", usn2);
-                window.open("index.html");
+                window.open("index.php");
             } else {
                 alert("Wrong Password")
             }

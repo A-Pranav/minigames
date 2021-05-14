@@ -9,7 +9,7 @@ function signed_up() {
     localStorage.setItem(usn, JSON.stringify(usr));
     arr = JSON.parse(localStorage.getItem(usn));
     alert("Registered successfully");
-    window.document.location = "./index.html"
+    window.document.location = "./index.php"
 }
 
 
