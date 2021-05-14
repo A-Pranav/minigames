@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon_io/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <link href="pingpongcss.css" rel="stylesheet">
+    <title>Ping Pong</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <p id="navwelecont">
+            <span class="linksp"><a class="otherlinks" href="../index.php">Home</a></span>
+        </p>
+    </nav>
+    <span id="currentuser" style="position: absolute;top: 3px;left: 275px;color: brown;"><h2><span id="cusn"></span></h2>
+    </span>
+    <div id="score">Score=0</div>
+    <div id="prevsco" style="position: absolute;top: 95px;left: 180px;">Best Score<span id="prevscore"></span></div>
+    <div id="lives">Lives=3</div>
+    <div id="cover">h</div>
+    <div id="gameover">
+        <br> Out of Lives
+        <br> Click on Play Again
+        <br><br>
+        <button id="playagain" onclick="eventmouseclick()">Play Again</button>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <br>
+    <button id="start" onclick="start()">Start Game</button>
+
+    <script src="pingpongjs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon_io/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="wamcss.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Whack-A-Mole</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- <button onclick="popup()">popup</button> -->
+
+    <span class="linksp"><a class="otherlinks" href="../index.php">Home</a></span>
+    <span id="currentuser" style="position: absolute;top: 0px;left: 160px;color: brown;">
+        <h2><span id="cusn"></span></h2>
+    </span>
+    <button id="startgame" onclick="info()">Start game</button>
+
+    <div id="main">
+        <br>
+        <br>
+        <div id="scoreboard">
+            <div>
+                Score= <span id="score">0</span>
+            </div>
+            <div id="score">Best Score
+                <span id="hscore"></span>
+            </div>
+        </div>
+        <div id="base">
+            <br>
+            <img class="molebg" src="images/bg.png" width="100%" height="100%">
+            <div id="mole1o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole2o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole3o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole4o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole5o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole6o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole7o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole8o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+            <div id="mole9o9" class="moles">
+                <img class="moleimg" src="images/mole2.png" width="100%" height="100%">
+            </div>
+        </div>
+        <p id="info">
+            <br> You have 1:00 minutes hit as many moles as possible to get the highest score.
+            <br> <br>
+            <button id="starter" onclick="popup()">Start Game</button>
+        </p>
+        <p id="timer">Time Left <span id="js-timeout">1:00</span></p>
+        <div id="gameover">
+            <br> Click on Play Again
+            <br><br>
+            <button id="playagain" onclick="loop()">Play Again</button>
+        </div>
+    </div>    
+    <script src="wamjs.js"></script>
+    
+
+</body>
+
+</html>

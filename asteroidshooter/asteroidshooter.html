@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shooter.css">
+    <link rel="icon" href="../favicon_io/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Astroid Shooter</title>
+</head>
+
+<body>
+    <span id="currentuser" style="position: absolute;top: 52px;left: 140px;color: brown; z-index: 6;">
+        <h2><span id="cusn"></span></h2>
+    </span>
+    <div id="startgame">
+        <br> You need to protect space ship from Asteroids <br><br> Click on Asteroids to destroy them,
+        <br> You Only have 5 lives.
+        <br><br>
+        <button id="startgamebtn" onclick="starter()">Start</button>
+    </div>
+    <div id="scorediv">Score=<span id="scorespan">0</span></div>
+    <div id="livesdiv">Lives left=<span id="livespan">0</span></div>
+    <div id="bscore">Best Score=<span id="bestscn">0</span></div>
+    <div><a class="otherlinks" href="../index.php">Home</a></div>
+    <div id="background">
+        <img src="images/background.jpg" width="100%" height="100%">
+        <div id="castroid1">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid2">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid3">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid4">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid5">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid6">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid7">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid8">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid9">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid10">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid11">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid12">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid13">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+        <div id="castroid14">
+            <img class="rock" id="astroidimg" src="images/astroid.png" width="100%" height="100%">
+            <img class="desrock" id="desastroidimg" src="images/explodingastroid2.png" width="100%" height="100%">
+        </div>
+
+        <div id="ship">
+            <img class="ships" id="shipimg" src="images/spaceship.png" width="100%" height="100%">
+            <img class="ships" id="shipfireimg" src="images/spaceshipfire.png" width="100%" height="100%">
+            <img class="desships" id="deshipimg" src="images/destroyspaceship.png" width="100%" height="100%">
+        </div>
+    </div>
+    <div id="gameover">
+        <br><br> The Space ship got destroyed
+        <br><br> You destroyed <span id="overscore"></span> Asteroids
+        <br><br>
+        <button id="playagainbtn" onclick="starter2()">Play Again</button>
+    </div>
+    <!-- <img src="images/astroid.png"> -->
+</body>
+<script src="shooter.js"></script>
+
+</html>

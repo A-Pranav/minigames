@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flexCol {
+    flex-direction: column;
+}
+
+.fullScrn {
+    width: 100%;
+    height: 100vh;
+}
+
+.halfScrn {
+    width: 100%;
+    height: 50vh;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+}
+
+:root {
+    --color: #46c57f;
+}
+
+
+/* starting of Css properties of operator and operand */
+
+
+/* for main box */
+
+#mainBox {
+    background: #f6f6f6;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#mainBox .main {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.stikBox {
+    display: flex;
+    width: 100%;
+    height: 2.6vh;
+}
+
+.stikBox.box0 {
+    width: 100%;
+}
+
+.stikBox.box1 {
+    justify-content: space-between;
+    height: 13vh;
+}
+
+.stikBox.box1 .stik0 {
+    width: 13%;
+    height: 100%;
+    background: var(--color);
+    opacity: .09;
+}
+
+.stikBox.box0 .stik1 {
+    width: 90%;
+    height: inherit;
+    background: var(--color);
+    opacity: .09;
+}
+
+
+/* mainbox operation box */
+
+#mainBox .operBox {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+#mainBox .operBox .stikBox1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#mainBox .operBox .stikBox2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.stik {
+    width: 100%;
+    height: 15%;
+    background: #4a47a3;
+}
+
+
+/* css of question box*/
+
+#quesBox {
+    background: #ccf2f4;
+    justify-content: space-evenly;
+}
+
+#quesBox .ques {
+    width: 30%;
+    height: auto;
+}
+
+#quesBox .ques .stikBox.box0 .stik1 {
+    background: #7868e6;
+}
+
+#quesBox .ques .stikBox.box1 .stik0 {
+    background: #7868e6;
+}
+
+
+/* status of inventry bar */
+
+#status {
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    top: 0;
+    background: #ff7171;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.stackBox {
+    width: 50%;
+    height: inherit;
+    padding: 0 .3rem;
+    transform: rotate(360deg);
+    justify-content: normal;
+}
+
+.stikInStack {
+    width: .4rem;
+    height: 5vh;
+    background: #00917c;
+    margin: .1rem;
+}
+
+
+/* css of winnig box */
+
+#winningbox {
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+#winningbox .winningmsg {
+    width: auto;
+    height: 15%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px black;
+    color: deeppink;
+}
+
+#winningbox .tryingbtn {
+    width: 40%;
+    height: auto;
+    background: #00917c;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-radius: .5rem;
+    box-shadow: 1px 2px 4px black;
+    border: #ccf2f4 solid 2px;
+}
+
+#navwelecont{
+    position: absolute;
+    top: -40px;
+    left: 12px;
+}
+
+#navbar{
+
+    height: 60px;
+    background-color: #4c92c7;
+    /* color:#09203f; */
+    background-image: linear-gradient(to right, #a3bded,#6991c7);   
+}
+
+.linksp{
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+
+.otherlinks {
+    padding: 0.1em 0.9em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    text-align: center;
+    transition: .4s;
+    position: relative;
+    top:50px;
+    left: 100px;
+}
+
+.otherlinks:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+
+#instruction1{
+    width: 300px;
+    height: 130px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#B7F8DB ,#50A7C2);
+    display:block;
+    position: relative;
+    top: -490px;
+    left: 39%;
+    z-index: 4;
+}
+#instruction2{
+    width: 300px;
+    height: 130px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#B7F8DB ,#50A7C2);
+    display:block;
+    position: relative;
+    top: -620px;
+    left: 39%;
+    z-index: 5;
+}
+.insbtn{
+    
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: .4s;
+    padding: 0.5px;
+    list-style-type: disc;
+    
+}
+
+.insbtn:hover {
+    background: #ffafbd;
+    color: white;
+}

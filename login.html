@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyles/logincss.css">
+    <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div id="formdiv">
+        <h2 id="heading">Sign In</h2>
+        <label for="user_name">Username</label>
+        <br>
+        <input type="text" class="inputbs" id="user_name" name="user_name" required>
+        <br>
+        <br>
+        <label for="ip_password">Password</label>
+        <br>
+        <input type="password" class="inputbs" id="ip_password" name="ip_password" required onkeyup="emptycheck()">
+        <br>
+        <br>
+        <button class="inputbs" id="btn_submit" name="submit" onclick="uscheck()">Sign In</button>
+        <a class="inputbs" href="sign_up.html">Sign Up</a>
+    </div>
+    <script src="scripts/loginjs.js"></script>
+    <!-- <script src="scripts/jquery-3.5.1.min.js"></script> -->
+    
+</body>
+
+</html>

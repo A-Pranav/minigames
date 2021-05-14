@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #8e2de2,#4a00e0);
+    color:#68f8fa;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+
+td,
+tr,
+table {
+    border: solid 6.5px;
+    border-collapse: collapse;
+}
+
+td {
+    
+    width: 13vw;
+    height:13vw;
+    text-align: center;
+    font-size: 9vw;
+}
+
+
+#tn{
+    position: relative;
+    top: -50px;
+    left: 2%;
+}
+
+
+#resetter {
+    /* padding: 5px; */
+        width: 100px;
+        padding: 0.1em ;
+        text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        height: 30px;
+        position: relative;
+        top:-25px;
+        left: 2%;
+    }
+    
+#resetter:hover {
+    background: #ffafbd;
+    color: white;
+}
+    
+
+#winner{
+    display: none;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 34.25%;
+    left: 40.15%;
+    background-image: linear-gradient(to right, #009fff,#ec2f4b);
+    font-weight: bolder;
+    border-radius: 3px;
+    border: solid 2px #ffafbd;
+    text-align: center;
+}
+
+
+#onwinning{
+    text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        height: 30px;
+}
+
+
+
+#onwinning:hover{
+    background: #11b634;
+    color: white;
+}
+
+#drawb{
+    display: none;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 34.25%;
+    left: 40.15%;
+    background-image: linear-gradient(to right, #009fff,#ec2f4b);
+    font-weight: bolder;
+    border-radius: 3px;
+    border: solid 2px #ffafbd;
+    text-align: center;
+    z-index: 20;
+}
+#drawbtn{
+    width: 100px;
+    padding: 0.1em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: .4s;
+    height: 30px;
+}
+
+#drawbtn:hover{
+    background: #ffafbd;
+    color: white;
+}
+
+#navwelecont{
+    position: absolute;
+    top: -40px;
+    left: 162px;
+}
+
+#navbar{
+    height: 60px;
+    background-color: #4c92c7;
+    /* color:#09203f; */
+    background-image: linear-gradient(to right, #a3bded,#6991c7);   
+}
+
+.linksp{
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    position: relative;
+    top: 50px;
+    left: -30px;
+}
+
+.otherlinks {
+    padding: 0.1em 0.9em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    text-align: center;
+    transition: .4s;
+    /* position: relative;
+    top:50px;
+    left: 100px; */
+}
+
+.otherlinks:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+#start{
+width: 300px;
+height: 200px;
+position: absolute;
+top: 34.25%;
+left: 40.15%;
+background-image: linear-gradient(to right, #009fff,#ec2f4b);
+font-weight: bolder;
+border-radius: 3px;
+border: solid 2px #ffafbd;
+text-align: center;
+}
+
+#startbtn{
+    width: 100px;
+    padding: 0.1em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: .4s;
+    height: 30px;
+}
+#startbtn:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+#tablecontainer{
+    position: relative;
+    top: -40px;
+    left: 25px;
+}

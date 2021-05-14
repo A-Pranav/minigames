@@ -1,0 +1,322 @@
+body {
+    background-image: linear-gradient(to right, #C9D6FF, #E2E2E2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+#pargamediv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: relative;
+    top: -35px;
+    left: -0.5%;
+}
+
+.gameimgdiv {
+    justify-content: space-evenly;
+    border-radius: 15px;
+    
+    background-image: linear-gradient(to right, #396afc, #2948ff);
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.linkstogame {
+    color: #FFF;
+    border: 3px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.linkstogame:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+}
+
+.linkstogame:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+#heading {
+    
+    position: relative;
+    top: -70px;
+    left: 3%;
+    margin-left: 42%;
+    margin-right: auto;
+    height: 5px;
+}
+
+#navwelecont {
+    position: absolute;
+    top: -40px;
+    left: 162px;
+}
+
+
+
+#logout{
+    padding: 0.1em .9em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: .4s;
+    position: relative;
+    top: 30px;
+    left: 964px;
+}
+#logout:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+#navbar {
+    height: 60px;
+    /* background-color: #4c92c7; */
+    /* color:#09203f; */
+    /* background-image: linear-gradient(to right, #a3bded,#6991c7);    */
+}
+
+.linksp {
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+
+.otherlinks {
+    padding: 0.1em .9em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: .4s;
+    position: relative;
+    top: 30px;
+    left: -49px;
+}
+
+.otherlinks:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+.gameimg {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+
+#matchsticks {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #FFF;
+    border: 3px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+#matchsticks:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+}
+
+#matchsticks:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+#matchsticksimg {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+
+#matchsticksdiv{
+    margin: 10px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    
+    background-image: linear-gradient(to right, #396afc, #2948ff);
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+#currentuser{
+    position: absolute;
+    top: 55px;
+    left: 120px;
+    color: brown;
+}
+
+
+@media screen and (max-width: 1330px) {
+    #logout{
+        padding: 0.1em .9em;
+        text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        position: relative;
+        top: 30px;
+        left: 725px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    #logout{
+        padding: 0.1em .9em;
+        text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        position: relative;
+        top: 30px;
+        left: 570px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #heading{
+        
+        position: relative;
+        top: -70px;
+        left: 14%;
+        margin-left: 42%;
+        margin-right: auto;
+        height: 5px;
+        
+    }
+
+    #logout{
+        padding: 0.1em .9em;
+        text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        position: relative;
+        top: 30px;
+        left: -50px;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    #heading{
+        position: relative;
+        top: -70px;
+        left: -5%;
+        margin-right: auto;
+        height: 50px;
+
+    }
+    
+    .otherlinks {
+        display: block;
+        padding: 0.1em .9em;
+        text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        position: relative;
+        top: 30px;
+        left: -109px;
+    }
+    #currentuser {
+        position: relative;
+        top: 45px;
+        left: 65px;
+    }
+    #logout{
+        padding: 0.1em .9em;
+        text-decoration: none;
+        border: solid 2px #ffafbd;
+        border-radius: 3px;
+        font-weight: bolder;
+        transition: .4s;
+        position: relative;
+        top: 30px;
+        left: -105px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #heading{
+        position: relative;
+        top: -70px;
+        left: -15%;
+        margin-right: auto;
+        height: 50px;
+
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #heading{
+        position: relative;
+        top: -70px;
+        left: -10%;
+        margin-right: auto;
+        height: 50px;
+
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #heading{
+        position: relative;
+        top: -70px;
+        left: -5%;
+        margin-right: auto;
+        height: 50px;
+
+    }
+}

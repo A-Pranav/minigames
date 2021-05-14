@@ -1,0 +1,120 @@
+
+canvas,button,#cover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+#score{
+    display: block;
+    position: absolute;
+    top:5px;
+    left: 790px; 
+    background-image: linear-gradient(to right,#fdfcfb ,#e2d1c3);
+
+}
+#lives{
+    display: block;
+    position: absolute;;
+    top:5px;
+    left: 645px;  
+    margin: auto;
+    background-image: linear-gradient(to right,#fdfcfb ,#e2d1c3);
+}
+#cover{
+    width:800px; 
+    height:600px;
+    background-color: black;
+    
+}
+#gameover{
+    text-align: center;
+    display: none;
+    width:200px;
+    height: 130px;
+    position: absolute;
+    top:295px;
+    left:650px;
+    z-index: 2;
+    background-image: linear-gradient(to right,#B7F8DB ,#50A7C2);
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+}
+
+#gameCanvas{
+    
+    display: none;
+    
+}
+body{
+    background-image: linear-gradient(to right, #48c6ef ,#6f86d6);
+    font-family: Verdana;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+
+#start{
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #668ad8;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    transition: .4s;
+    font-size: 20px;
+}
+
+#start:hover {
+    background: #ffafbd;
+    color: white;
+}
+#playagain{
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+#playagain:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+#navwelecont{
+    position: absolute;
+    top: -40px;
+    left: 162px;
+}
+
+#navbar{
+    height: 60px;
+}
+
+.linksp{
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+
+.otherlinks {
+    padding: 0.1em 0.9em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    text-align: center;
+    transition: .4s;
+    position: relative;
+    top:50px;
+    left: 0px;
+}
+
+.otherlinks:hover {
+    background: #ffafbd;
+    color: white;
+}

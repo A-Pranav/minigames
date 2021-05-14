@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon_io/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="tictactoe.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <p id="navwelecont">
+            <span class="linksp"><a class="otherlinks" href="../index.php">Home</a></span>
+        </p>
+    </nav>
+    <p id="tn">It's X's turn</p>
+    <div id="tablecontainer">
+        <table border="2px">
+            <tr>
+                <td id="0" onclick="clicked(event)"></td>
+                <td id="1" onclick="clicked(event)"></td>
+                <td id="2" onclick="clicked(event)"></td>
+            </tr>
+            <tr>
+                <td id="3" onclick="clicked(event)"></td>
+                <td id="4" onclick="clicked(event)"></td>
+                <td id="5" onclick="clicked(event)"></td>
+            </tr>
+            <tr>
+                <td id="6" onclick="clicked(event)"></td>
+                <td id="7" onclick="clicked(event)"></td>
+                <td id="8" onclick="clicked(event)"></td>
+            </tr>
+        </table>
+    </div>
+    <button id="resetter" onclick="reset()">Reset Game</button>
+
+    <div id="winner">
+        <br><br> The Winner is <span id="winnerval"></span>
+        <br><br> Click Play Again<br><br>
+        <button id="onwinning" onclick="reset()">Play Again</button>
+    </div>
+    <div id="start">
+        <br><br> Click on Play
+        <br><br> to start game<br><br>
+        <button id="startbtn" onclick="reset()">Play</button>
+    </div>
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>

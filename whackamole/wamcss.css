@@ -1,0 +1,192 @@
+body{
+    background-image: linear-gradient(to right, #06beb6,#48b1bf);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#startgame{
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #004e92;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    position: absolute;
+    top:10px;
+    left:46.5%;
+    transition: .4s;
+    margin: auto;
+}
+    
+#startgame:hover {
+    background: #ffafbd;
+    color: white;
+}
+#starter{
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #004e92;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    transition: .4s;
+    margin: auto;
+}
+    
+#starter:hover {
+    background: #ffafbd;
+    color: white;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#base {
+    width: 700px;
+    height: 600px;
+    justify-self: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.moles {
+    width: 100px;
+    width: 100px;
+    z-index: 3;
+    display: none;
+}
+.moleimg{
+    z-index: 9;
+}
+#mole1o9 {
+    position: absolute;
+    left: 518px;
+    top: 77px;
+}
+
+#mole2o9 {
+    position: absolute;
+    left: 718px;
+    top: 77px;
+}
+
+#mole3o9 {
+    position: absolute;
+    left: 918px;
+    top: 87px;
+}
+
+#mole4o9 {
+    position: absolute;
+    left: 518px;
+    top: 295px;
+}
+
+#mole5o9 {
+    position: absolute;
+    left: 718px;
+    top: 295px;
+}
+
+#mole6o9 {
+    position: absolute;
+    left: 918px;
+    top: 295px;
+}
+
+#mole7o9 {
+    position: absolute;
+    left: 518px;
+    top: 515px;
+}
+
+#mole8o9 {
+    position: absolute;
+    left: 718px;
+    top: 515px;
+}
+
+#mole9o9 {
+    position: absolute;
+    left: 918px;
+    top: 515px;
+}
+#gameover{
+    text-align: center;
+    width:200px;
+    height:100px;
+    display: none;
+    position: absolute;
+    top:295px;
+    left:650px;
+    z-index: 2;
+    background-image: linear-gradient(to right,#B7F8DB ,#50A7C2);
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+}
+
+#playagain{
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    transition: .4s;
+}
+    
+#playagain:hover {
+    background: #ffafbd;
+    color: white;
+}
+#info{
+    text-align: center;
+    background-image: linear-gradient(to right,#02aab0 ,#00cdac);
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top:295px;
+    left:615px;
+    color: white;
+    display:none;
+}
+#timer{
+    position: absolute;
+    padding: 0.3rem;
+    bottom:30px;
+    left:45.5%;
+    background-image: linear-gradient(to right,#ddd6f3 ,#faaca8);
+}
+
+
+
+#scoreboard{
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+.linksp{
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+
+.otherlinks {
+    padding: 0.1em 1em;
+    text-decoration: none;
+    border: solid 2px #ffafbd;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: .4s;
+    display: inline-block;
+}
+
+.otherlinks:hover {
+    background: #ffafbd;
+    color: white;
+}
